@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace asyncstuff
 {
-    class Program
+    class TryAsyncAwait1
     {
         static void Main(string[] args)
         {
@@ -26,6 +26,8 @@ namespace asyncstuff
             WriteTimed("[Main] arbitrary result from the callee: " + length.Result.ToString());
             Console.ReadLine();
         }
+
+
 
         static async Task<int> GetTheLength()
         {
