@@ -4,7 +4,8 @@ let nextprime (primes:uint64[])=
     let lst = List.ofArray primes
     let mutable divisors_cnt = 1
     while divisors_cnt > 0 do
-        divisors_cnt <- (List.length (List.filter (fun (x:uint64)-> p%x=0UL) lst))
+        let p2 = p
+        divisors_cnt <- (List.length (List.filter (fun (x:uint64)-> p2%x=0UL) lst))
         p<-p+1UL
     p-1UL
 
