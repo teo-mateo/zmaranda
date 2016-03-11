@@ -2,10 +2,7 @@
     let ret = match x with
         | 1 -> 1
         | 2 -> 2
-        | _ -> 
-            let y = x-1
-            let z = x-2
-            (fib y) + (fib z)
+        | n -> (fib n-1) + (fib n-2)
     ret
 
 let fib2 limit= 
@@ -17,3 +14,5 @@ let fib2 limit=
         if nxt%2=0 then sum<-sum+nxt
 
     sum
+
+fib2 1000000
