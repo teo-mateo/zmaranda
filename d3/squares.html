@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html>
+<style type="text/css">
+	
+</style>
+<script src="d3.v3.min.js" charset="utf-8"></script>
+<script src="rgb.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+	function theclick(){
+		var active = d3.select("circle").classed("active");
+		d3.select("circle").classed("active", !active);
+	}
+	function sqclick(){
+		alert("sqclick");
+	}
+
+	function load(){
+		$('rect').on("click", function(){
+			var _t = $(this);
+			var rgb = hexToRgb(_t.attr("fill"));
+			
+			var tag = _t.attr("tag");
+
+			if(rgb[tag]<255)
+				rgb[tag] +=5;
+			else
+				rgb[tag] = 0;
+
+			var hex = rgbToHex(rgb.r, rgb.g, rgb.b);
+			console.log(tag + " " + hex);
+			_t.attr("fill", hex);
+		});
+	}
+
+	
+
+</script>
+<body onload="load()">
+	<div id="infovizDiv">
+		<svg style="width:500px;height:500px;border:1px lightgray solid;">
+			<rect x="10" y="10" width="30" height="30"
+				fill="#FF0000" tag="r" rgb=""/>
+			<rect x="45" y="10" width="30" height="30"
+				fill="#0000FF" tag="g" rgb=""/>
+			<rect x="80" y="10" width="30" height="30"
+				fill="#00FF00" tag="b" rgb=""/>
+		</svg>
+	</div>
+	<input type="button" value="da clic aici mai" onclick="theclick();">
+</body>
+</html>
