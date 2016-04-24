@@ -1,18 +1,26 @@
-var testString = "alfa beta gama";
+var http = require('http');
+var d3 = require('d3');
 
-console.log("yo man");
-function fuckit(argument) {
-	console.log("fuck the argument");
-}
+var F = {
+	TWEETS: {
+		URL: "http://localhost:8081/book/tweets.json", 
+		DATA: ""
+	}
+};
 
-function add(a, b){
-	return a+b;
-}
+/*
+http.get(F.TWEETS.URLcd, function(response){
+	response.on('data', function(chunk){
+		F.TWEETS.DATA += chunk;
+	});
+});
+*/
 
-function subtract(a, b){
-	return a-b;
-}
+d3.json(F.TWEETS.URL, function(data){
+	var tweetData = data.tweets;
+	var nestedTweets = d3.nest()
+		.key(function(el){ return el.user;})
+		.entries(tweetData);
+});
 
-function alpha(){
-	fuckit(1);
-}
+var dbg = 1;
