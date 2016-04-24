@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+<style type="text/css">
+	#borderdiv{
+		width: 200px;
+		height: 50px;
+		border: 1px solid gray;
+	}
+</style>
+<script src="d3.v3.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+function load(){
+	var somedata = ["filler", "filler", "filler", "filler"];
+	d3.select("body")
+		.selectAll("div")
+		.data(somedata)
+		.enter()
+		.append("div")
+		.html("Wow")
+			.append("span")
+			.html("Even more wow")
+			.style('font-weight', '900')
+}
+</script>
+<body onload="load()">
+	<div id="borderdiv">
+	</div>
+</body>
+</html>
