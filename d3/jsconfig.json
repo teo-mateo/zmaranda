@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES6"
+    },
+    "files": [
+        "typings/d3.d.ts" 
+    ]
+    
+}
