@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+	<script src="soccer.js">
+	</script>
+	<style rel="css">
+		text {
+			font-size:10px;
+		}
+		g > text.active{
+			font-size:30px;
+		}
+
+
+		#modal{
+			position: fixed;
+			left: 150px;
+			top: 20px;
+			z-index: 1;
+			background: white;
+			border: 1px black solid;
+			box-shadow: 10px 10px 10px 5px #888888;
+		}
+
+		tr {
+			border: 1px gray solid;
+		}
+		td{
+			font-size: 10px;
+		}
+		td.data {
+			font-weight: 900;
+		}
+
+	</style>
+</head>
+<body onload="createSoccerViz('worldcup.csv')">
+	<div id="vizcontainer" style="padding: 10px;">
+		<svg style="width:500px;height:300px;border:1px lightgray solid; padding: 20px;"></svg>
+	</div>
+</body>
+</html>
