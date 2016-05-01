@@ -131,9 +131,23 @@ function overallTeamViz(incomingData) {
 			.html(function(p) { return p;})
 	});
 
-	d3.html("football.svg", function(svgData){
-		d3.select(svgData).selectAll("path").each(function(){
-			d3.select("svg").node().appendChild(this);
-		})
-	});
+	d3.html("football.svg", loadSVG);
+
+	function loadSVG(svgData){
+		d3.selectAll("g.overallG").each(function(){
+			var gParent = this;
+			var gBall = d3.select(this).append("g").classed("gBall", true);
+
+			function appendBall(){
+				var ball = this.cloneNode(true);
+				gBall.node().appendChild(ball);
+				d3.select(ball).attr("transform", "scale(0.5)");
+			}
+
+			d3.select(svgData).selectAll("path").each(appendBall);
+
+			gBall.attr("transform", "translate(-25.5, -24)");
+		});
+	}
+
 }
