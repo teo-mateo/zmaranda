@@ -30,3 +30,22 @@ text.title{
     font-family: "Lucida Console";
     font-size:small;
 }
+
+.rectBoxVC{
+    fill: #5c9aff;
+    stroke-width: 1px;
+    stroke: darkgray;
+}
+.rectBoxOJ{
+    fill: orange;
+    stroke-width: 1px;
+    stroke: darkgray;
+}
+.whiskers{
+    stroke: blue;
+    stroke-width: 1px;
+}
+.median {
+    stroke: black;
+    stroke-width: 4px;
+}
