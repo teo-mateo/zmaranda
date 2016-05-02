@@ -37,5 +37,5 @@ function load(scatterData){
     var yAxis = d3.svg.axis().scale(yScale).orient("right").ticks(14).tickSize(500);
     _svg.append("g").attr("id", "yAxisG").call(yAxis);
     var xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(4).tickSize(500);
-    _svg.append("g").attr("id", "xAxisG").call(xAxis); //test
+    _svg.append("g").attr("id", "xAxisG").call(xAxis); //test test
 }
