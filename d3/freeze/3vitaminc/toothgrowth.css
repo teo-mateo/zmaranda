@@ -3,7 +3,30 @@ path.domain{
     stroke: gray;
 }
 
+circle.ptVC{
+    fill: #5c9aff;
+    stroke: gray;
+    opacity: .8;
+}
+
+circle.ptOJ{
+    fill: orange;
+    stroke: gray;
+    opacity: .8;
+}
+
 line{
     shape-rendering: crispEdges;
-    stroke: #000;
+    stroke: gray;
+}
+
+text.title{
+    font-family: "Lucida Console";
+    font-size: medium;
+}
+
+.labelx,
+.labely{
+    font-family: "Lucida Console";
+    font-size:small;
 }
