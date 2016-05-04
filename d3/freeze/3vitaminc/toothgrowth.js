@@ -129,110 +129,112 @@ function generateScatterPlot(scatterData){
         });
 }
 
-function generateAllBoxPlots(scatterData){
+function generateAllBoxPlots(scatterData) {
     var svg = d3.select("svg#boxplotSVG");
     var graph = generateAxis(svg);
-    
-    var vc_05mg = scatterData.filter(function(d) { return +d.dose == 0.5 && d.supp =="VC";});
-    generateBoxPlot(graph, vc_05mg, 0.5, "VC");
 
-    var vc_1mg = scatterData.filter(function(d) { return +d.dose == 1.0 && d.supp =="VC";});
-    generateBoxPlot(graph, vc_1mg, 1, "VC");
+    var byDose = d3.nest()
+        .key(function (d) {
+            return d.supp;
+        })
+        .key(function (d) {
+            return d.dose;
+        })
+        .entries(scatterData);
 
-    var vc_1p5mg = scatterData.filter(function(d) { return +d.dose == 1.5 && d.supp =="VC";});
-    generateBoxPlot(graph, vc_1p5mg, 1.5, "VC");
+    var boxPlotData = [];
+    byDose.forEach(function (d) {
+        d.values.forEach(function (e) {
+            var values = e.values.map(function (x) {
+                return +x.len;
+            });
+            values.sort(function (a, b) {
+                return a - b;
+            });
+            boxPlotData.push({
+                dose: e.key,
+                supp: d.key,
+                min: d3.min(values),
+                q1: d3.quantile(values, 0.25),
+                median: d3.median(values),
+                q3: d3.quantile(values, 0.75),
+                max: d3.max(values),
+                values: values
+            })
+        });
+    });
 
-    var vc_2mg = scatterData.filter(function(d) { return +d.dose == 2 && d.supp =="VC";});
-    generateBoxPlot(graph, vc_2mg, 2, "VC");
 
-    var oj_05mg = scatterData.filter(function(d) { return +d.dose == 0.5 && d.supp =="OJ";});
-    generateBoxPlot(graph, oj_05mg, 0.5, "OJ");
-
-    var oj_1mg = scatterData.filter(function(d) { return +d.dose == 1.0 && d.supp =="OJ";});
-    generateBoxPlot(graph, oj_1mg, 1, "OJ");
-
-    var oj_1p5mg = scatterData.filter(function(d) { return +d.dose == 1.5 && d.supp =="OJ";});
-    generateBoxPlot(graph, oj_1p5mg, 1.5, "OJ");
-
-    var oj_2mg = scatterData.filter(function(d) { return +d.dose == 2 && d.supp =="OJ";});
-    generateBoxPlot(graph, oj_2mg, 2, "OJ");
-}
-
-/**
- *
- * @param svg - the svg
- * @param data - filtered data (all population) for the dosage and type of administration
- * @param dose - dosage
- * @param type - type of administration (VC vitamin C) / (OJ orange juice)
- */
-function generateBoxPlot(graph, data, dose, type){
-    var toothlengths = data.map(function(d) { return +d.len;});
-    toothlengths = toothlengths.sort(d3.ascending);
-    var median = d3.median(toothlengths);
-    var min = d3.min(toothlengths);
-    var q1 = d3.quantile(toothlengths, 0.25);
-    var q3 = d3.quantile(toothlengths, 0.75);
-    var max = d3.max(toothlengths);
-
-    var g = graph.append("g")
+    graph.selectAll("g.box")
+        .data(boxPlotData)
+        .enter()
+        .append("g")
+        .classed("box", true)
         .attr({
-            class: "box",
-            transform: function(d, i){
-                var x = xScale(dose) + (type == "VC" ? (-10) : (10));
-                var y = yScale(median);
+            "data": function (d) {
+                return d.supp + " " + d.dose + "mg " + "median(" + d.median + ") ";
+            },
+            transform: function (d, i) {
+                var x = xScale(d.dose) + (d.supp == "VC" ? (-10) : (10));
+                var y = yScale(d.median);
                 return "translate(" + x + ", " + y + ")";
             }
-        });
-    g.append("rect")
-        .attr({
-            class: "rectBox" + type,
-            width: 10,
-            height: yScaleNormal(q3-q1),
-            x: -5,
-            y: -yScaleNormal((q3-q1)/2),
-            "data": "[" + min + " " + q1 + " " + median + " " + q3 + " " + max + "]"
-        });
+        })
+        .each(function (d, i) {
+            d3.select(this)
+                .append("rect")
+                .attr({
+                    class: "rectBox" + d.supp,
+                    width: 10,
+                    height: function () {
+                        return yScaleNormal(d.q3 - d.q1);
+                    },
+                    x: -5,
+                    y: function () {
+                        return -yScaleNormal((d.q3 - d.q1) / 2)
+                    }
+                });
 
-    g.append("line")
-        .attr({
-           class: "median",
-            x1: -5, x2: 5,
-            y1: 0, y2: 0
-        });
+            d3.select(this).append("line")
+                .attr({
+                    class: "median",
+                    x1: -5, x2: 5,
+                    y1: 0, y2: 0
+                });
+            d3.select(this).append("line")
+                .attr({
+                    class: "whiskers",
+                    x1: 0,
+                    x2: 0,
+                    y1: -yScaleNormal((d.q3 - d.q1) / 2),
+                    y2: -yScaleNormal(d.max - d.median)
+                });
 
-    g.append("line")
-        .attr({
-            class: "whiskers",
-            x1: 0,
-            x2: 0,
-            y1: -yScaleNormal((q3-q1)/2),
-            y2: -yScaleNormal(max-median)
-        });
+            d3.select(this).append("line")
+                .attr({
+                    class: "whiskers",
+                    x1: 0,
+                    x2: 0,
+                    y1: yScaleNormal((d.q3 - d.q1) / 2),
+                    y2: yScaleNormal(d.median - d.min)
+                });
 
-    g.append("line")
-         .attr({
-             class: "whiskers",
-             x1: 0,
-             x2: 0,
-             y1: yScaleNormal((q3-q1)/2),
-             y2: yScaleNormal(median-min)
-         });
+            d3.select(this).append("line")
+                .attr({
+                    data: "end1",
+                    class: "whiskers",
+                    x1: -5, x2: 5,
+                    y1: -yScaleNormal(d.max - d.median),
+                    y2: -yScaleNormal(d.max - d.median)
+                });
 
-    g.append("line")
-        .attr({
-            data: "end1",
-            class:"whiskers",
-            x1: -5, x2: 5,
-            y1: -yScaleNormal(max-median),
-            y2: -yScaleNormal(max-median)
-        });
-
-    g.append("line")
-        .attr({
-            data: "end1",
-            class:"whiskers",
-            x1: -5, x2: 5,
-            y1: yScaleNormal(median-min),
-            y2: yScaleNormal(median-min)
+            d3.select(this).append("line")
+                .attr({
+                    data: "end2",
+                    class: "whiskers",
+                    x1: -5, x2: 5,
+                    y1: yScaleNormal(d.median - d.min),
+                    y2: yScaleNormal(d.median - d.min)
+                });
         });
 }
