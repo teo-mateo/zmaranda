@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e691fba1-9ffe-4a67-ac99-3e1c89b0f56b" name="Default" comment="map array of arrays using reduce">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.Net.Compilers.1.0.0/Microsoft.Net.Compilers.1.0.0.nupkg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/steam/movies.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/steam/movies.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/.vs/config/applicationhost.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/Properties/AssemblyInfo.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/Web.Debug.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/Web.Release.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/Web.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/WebApplication1.csproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/packages.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/web/toothgrowth.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/web/toothgrowth.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/web/toothgrowth.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/WebApplication1/web/toothgrowth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/content/web.config.install.xdt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/content/web.config.uninstall.xdt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/tools/init.ps1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/tools/uninstall.ps1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.Net.Compilers.1.0.0/ThirdPartyNotices.rtf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CSharp.Core.targets" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.VisualBasic.Core.targets" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/packages/Microsoft.Net.Compilers.1.0.0/tools/VBCSCompiler.exe.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/3vitaminc/vitaminc/vitaminc.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/steam/movies.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/steam/steam.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/steam/steam.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/steam/steam.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/steam/movies.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/steam/steam.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/steam/steam.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/steam/steam.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util.js" />
+    <list default="true" id="e691fba1-9ffe-4a67-ac99-3e1c89b0f56b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/euribor10m/euribor10m.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/euribor10m/euribor10m.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/euribor10m/euribor10m.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freeze/euribor10m/euribor10m.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_line.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/html/Fig_04_25.html" afterPath="$PROJECT_DIR$/book/html/Fig_04_25.html" />
     </list>
     <ignored path="d3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,119 +28,49 @@
     <favorites_list name="d3" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5416667">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="movies.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/steam/movies.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="steam.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/steam/steam.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="steam.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/steam/steam.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tweetdata.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tweetdata.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="8" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="steam.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/steam/steam.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Fig_04_25.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/book/html/Fig_04_25.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tweetdata.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-                  <folding>
-                    <element signature="n#!!doc;n#viz#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tweetdata.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/freeze/chapter4/tweetdata.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="714">
-                  <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="37" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="euribor10m.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/euribor10m/euribor10m.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="euribor10m.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/freeze/euribor10m/euribor10m.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_line.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_line.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -187,8 +89,6 @@
         <option value="$PROJECT_DIR$/soccer.html" />
         <option value="$PROJECT_DIR$/soccer.js" />
         <option value="$PROJECT_DIR$/freeze/1soccer/soccer.js" />
-        <option value="cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js" />
-        <option value="chrome-extension://jnihajbhpnppcggbcgedagnkighmdlei/injected.js" />
         <option value="$PROJECT_DIR$/freeze/2scatterplot/friends.csv" />
         <option value="$PROJECT_DIR$/freeze/2scatterplot/scatterplot.html" />
         <option value="$PROJECT_DIR$/freeze/2scatterplot/scatterplot.css" />
@@ -205,9 +105,14 @@
         <option value="$PROJECT_DIR$/freeze/chapter4/tweetdata.html" />
         <option value="$PROJECT_DIR$/freeze/chapter4/tweetdata.js" />
         <option value="$PROJECT_DIR$/steam/steam.css" />
-        <option value="$PROJECT_DIR$/book/html/Fig_04_25.html" />
         <option value="$PROJECT_DIR$/steam/steam.js" />
         <option value="$PROJECT_DIR$/steam/steam.html" />
+        <option value="$PROJECT_DIR$/book/html/Fig_04_25.html" />
+        <option value="$PROJECT_DIR$/euribor10m/euribor10m.csv" />
+        <option value="chrome-extension://jnihajbhpnppcggbcgedagnkighmdlei/injected.js" />
+        <option value="cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js" />
+        <option value="$PROJECT_DIR$/test_line.html" />
+        <option value="$PROJECT_DIR$/euribor10m/euribor10m.html" />
       </list>
     </option>
   </component>
@@ -217,10 +122,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -355,34 +259,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="freeze" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -401,25 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="steam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="freeze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter4" />
+              <option name="myItemId" value="euribor10m" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,7 +291,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/d3.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="setti&#9;ACTION&#9;WelcomeScreen.Settings&#10;debug&#9;ACTION&#9;ChooseDebugConfiguration&#10;sett&#9;ACTION&#9;WelcomeScreen.Settings&#10;browser&#9;ACTION&#9;OpenInBrowserEditorContextBarGroupAction&#10;plugins&#9;ACTION&#9;WelcomeScreen.Plugins&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="recentsLimit" value="5" />
@@ -452,20 +310,20 @@
       <recent name="C:\git\zmaranda\d3\freeze\3vitaminc" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.steam.html">
+  <component name="RunManager" selected="JavaScript Debug.euribor10m.html">
     <configuration default="false" name="steam.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/d3/steam/steam.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="Fig_04_04.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/d3/book/html/Fig_04_04.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="Fig_04_24.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/d3/book/html/Fig_04_24.html">
       <method />
     </configuration>
     <configuration default="false" name="Fig_04_25.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/d3/book/html/Fig_04_25.html">
       <method />
     </configuration>
     <configuration default="false" name="steam.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="steam.js" working-dir="$PROJECT_DIR$/steam">
+      <method />
+    </configuration>
+    <configuration default="false" name="euribor10m.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/d3/euribor10m/euribor10m.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="test_line.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/d3/test_line.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -528,18 +386,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.steam.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_04.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_24.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_25.html" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.steam.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_25.html" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.steam.js" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.euribor10m.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test_line.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.steam.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.steam.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_25.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_24.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_04.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.euribor10m.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test_line.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.steam.html" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.steam.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Fig_04_25.html" />
       </list>
     </recent_temporary>
   </component>
@@ -558,7 +416,7 @@
       <updated>1461969514925</updated>
       <workItem from="1462018059931" duration="20779000" />
       <workItem from="1462209820027" duration="7472000" />
-      <workItem from="1462386255140" duration="24028000" />
+      <workItem from="1462386255140" duration="31804000" />
     </task>
     <task id="LOCAL-00001" summary="soccer">
       <created>1462019839399</created>
@@ -616,32 +474,48 @@
       <option name="project" value="LOCAL" />
       <updated>1462453417458</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="steam graph">
+      <created>1462463928766</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1462463928766</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52279000" />
+    <option name="totallyTimeSpent" value="60055000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14060031" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="721" y="-23" width="478" height="1062" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2892741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="721" y="-23" width="478" height="1062" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30144167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3145946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29513514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30033004" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -684,7 +558,8 @@
     <MESSAGE value="Array.maxByReduce" />
     <MESSAGE value="ugh" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="steam graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="steam graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -699,7 +574,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="109" />
+      <option name="time" value="138" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -708,45 +583,11 @@
       </configuration>
       <configuration name="JavascriptDebugType">
         <watch expression="array" language="JavaScript" />
+        <watch expression="xAx.scale(2000)" language="HTML" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/soccer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/worldcup.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/worldcup.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soccer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -853,11 +694,6 @@
         <state relative-caret-position="144">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
         </state>
-      </provider>
-    </entry>
-    <entry file="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book/cities.csv">
@@ -982,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freeze/chapter4/tweetdata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book/movies.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1013,33 +839,9 @@
         <state relative-caret-position="126">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steam/steam.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,18 +853,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/steam/movies.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book/html/Fig_04_25.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="273">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1077,30 +871,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freeze/chapter4/tweetdata.js">
+    <entry file="file://$PROJECT_DIR$/freeze/chapter4/tweetdata.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="37" selection-end-column="47" />
+        <state relative-caret-position="63">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/steam/steam.js">
+    <entry file="file://$PROJECT_DIR$/euribor10m/euribor10m.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="-765">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freeze/chapter4/tweetdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freeze/chapter4/tweetdata.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/steam/steam.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/steam/movies.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/steam/steam.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter4/tweetdata.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/steam/steam.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_line.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euribor10m/euribor10m.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freeze/euribor10m/euribor10m.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .tick line{
+            opacity: 0.2;
+            stroke-dasharray: 2;
+        }
+        path.domain{
+            fill: none;
+            stroke: gray;
+        }
+
+        line{
+            shape-rendering: crispEdges;
+            stroke: gray;
+            fill: none
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Euribor 10m 1999-2013</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+
+</head>
+<body>
+<div id="vizcontainer" style="padding: 10px;">
+    <svg id="theSVG" style="width:750px;height:200px;border:10px lightgray solid; "></svg>
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+d3.csv('euribor10m.csv', function(euriborAll){
+
+    var data = averageByYear(euriborAll);
+
+    var xAx = createDateAxis(data, 'year', [20, 700], "bottom");
+    xAx.axis.ticks(d3.time.years)
+            .ticks(data.length)
+            .innerTickSize(-100);
+    var yAx = createNumberAxis(data, 'rate', [100, 20], "left");
+    yAx.axis.ticks(5)
+            .innerTickSize(-700);
+
+    var gX = d3.select('svg').append('g')
+            .attr({
+                transform: "translate(5, 110)"
+            }).call(xAx.axis);
+    var gY = d3.select('svg').append('g')
+            .attr({
+                transform: "translate(18, 0)"
+            }).call(yAx.axis);
+    var line = d3.svg.line()
+            .x(function(d)
+            {
+                return xAx.scale(d.year);
+            })
+            .y(function(d) {
+                return yAx.scale(d.rate);
+            }).interpolate("");
+    d3.select("svg").append("path")
+            .attr("d", line(data))
+            .attr("fill", "none")
+            .attr("stroke", "blue")
+            .attr("stroke-width", 3)
+            .attr("opacity", .5)
+            .attr("transform", "translate(5,0)")
+
+    d3.select("svg").append("text")
+            .html("Fuck this.")
+            .attr("transform", "translate(200,170)");
+
+});
+
+
+function createDateAxis(data, prop, range, orient){
+    var _Extent = d3.extent(data, function(d) { return d[prop];});
+    var _Scale = d3.time.scale().domain(_Extent).range(range);
+    var _Axis = d3.svg.axis().orient(orient).scale(_Scale);
+
+    return {
+        extent: _Extent,
+        scale: _Scale,
+        axis: _Axis
+    };
+}
+function createNumberAxis(data, prop, range, orient){
+    var _Extent = d3.extent(data, function(d) { return d[prop];});
+    var _Scale = d3.scale.linear().domain(_Extent).range(range);
+    var _Axis = d3.svg.axis().orient(orient).scale(_Scale);
+
+    return {
+        extent: _Extent,
+        scale: _Scale,
+        axis: _Axis
+    };
+}
+function averageByYear(data){
+    var year_rate = data.map(function(d){
+        return {
+            year: new Date(d.date).getFullYear(),
+            rate: d.rate
+        };
+    });
+
+    return d3.nest()
+            .key(function(d) { return d.year;})
+            .rollup(function(leaves)
+            {
+                return d3.median(leaves.map(function(d) { return d.rate;}));
+            })
+            .entries(year_rate)
+            .map(function(d){
+                return { year: new Date(d.key, 1, 1), rate: d.values };
+            });
+
+}
+
+</script>
