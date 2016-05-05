@@ -32,7 +32,13 @@ function lineChart(csv){
         .tickSize(480)
         .tickValues(days);
 
-    d3.select("svg")
+    //the entire graph is within a group
+    var _g = d3.select("svg").append("g")
+        .classed("graph", true)
+        .attr("transform", "translate(25,25)");
+
+
+    _g
         .append("g").attr({id: "xAxisG"})
         .call(xAxis);
 
@@ -42,11 +48,11 @@ function lineChart(csv){
         .ticks(10)
         .tickSize(480);
 
-    d3.select("svg")
+    _g
         .append("g").attr({id: "yAxisG"})
         .call(yAxis);
 
-    d3.select("svg")
+    _g
         .selectAll("circle.tweets")
         .data(csv)
         .enter()
@@ -58,7 +64,7 @@ function lineChart(csv){
         })
         .style("fill", "yellow");
 
-    d3.select("svg")
+    _g
         .selectAll("circle.retweets")
         .data(csv)
         .enter()
@@ -70,7 +76,7 @@ function lineChart(csv){
         })
         .style("fill", "green");
 
-    d3.select("svg")
+    _g
         .selectAll("circle.retweets")
         .data(csv)
         .enter()
@@ -104,7 +110,7 @@ function lineChart(csv){
             return yScale(+d.favorites);
         }).interpolate("step");
 
-    d3.select("svg")
+    _g
         .append("path")
         .attr("d", tweetsLine(csv))
         .attr({
@@ -112,7 +118,7 @@ function lineChart(csv){
             stroke: "yellow",
             "stroke-width": 2
         });
-    d3.select("svg")
+    _g
         .append("path")
         .attr("d", retweetsLine(csv))
         .attr({
@@ -120,7 +126,7 @@ function lineChart(csv){
             stroke: "green",
             "stroke-width": 2
         });
-    d3.select("svg")
+    _g
         .append("path")
         .attr("d", favoritesLine(csv))
         .attr({
