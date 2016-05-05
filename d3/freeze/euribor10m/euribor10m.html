@@ -24,7 +24,7 @@
 </head>
 <body>
 <div id="vizcontainer" style="padding: 10px;">
-    <svg id="theSVG" style="width:750px;height:200px;border:10px lightgray solid; "></svg>
+    <svg id="theSVG" style="width:630px;height:200px;border:10px lightgray solid; "></svg>
 </div>
 </body>
 </html>
@@ -35,13 +35,13 @@ d3.csv('euribor10m.csv', function(euriborAll){
 
     var data = averageByYear(euriborAll);
 
-    var xAx = createDateAxis(data, 'year', [20, 700], "bottom");
+    var xAx = createDateAxis(data, 'year', [20, 600], "bottom");
     xAx.axis.ticks(d3.time.years)
             .ticks(data.length)
             .innerTickSize(-100);
     var yAx = createNumberAxis(data, 'rate', [100, 20], "left");
     yAx.axis.ticks(5)
-            .innerTickSize(-700);
+            .innerTickSize(-600);
 
     var gX = d3.select('svg').append('g')
             .attr({
