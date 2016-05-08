@@ -4,9 +4,6 @@
     <list default="true" id="e691fba1-9ffe-4a67-ac99-3e1c89b0f56b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freeze/iris/index.html" afterPath="$PROJECT_DIR$/freeze/iris/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freeze/iris/iris.js" afterPath="$PROJECT_DIR$/freeze/iris/iris.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freeze/util/lodash.js" afterPath="$PROJECT_DIR$/freeze/util/lodash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freeze/util/util.js" afterPath="$PROJECT_DIR$/freeze/util/util.js" />
     </list>
     <ignored path="d3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,9 +67,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/freeze/iris/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="102">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -497,7 +497,7 @@
       <workItem from="1462386255140" duration="32654000" />
       <workItem from="1462523838270" duration="4326000" />
       <workItem from="1462692260932" duration="8867000" />
-      <workItem from="1462701153679" duration="11897000" />
+      <workItem from="1462701153679" duration="13352000" />
     </task>
     <task id="LOCAL-00001" summary="soccer">
       <created>1462019839399</created>
@@ -597,11 +597,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462716798156</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="iris2">
+      <created>1462717541627</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1462717541627</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85995000" />
+    <option name="totallyTimeSpent" value="87450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -681,7 +688,8 @@
     <MESSAGE value="another simple line&#10;" />
     <MESSAGE value="histogram" />
     <MESSAGE value="iris" />
-    <option name="LAST_COMMIT_MESSAGE" value="iris" />
+    <MESSAGE value="iris2" />
+    <option name="LAST_COMMIT_MESSAGE" value="iris2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,9 +1106,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/freeze/iris/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="102">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
