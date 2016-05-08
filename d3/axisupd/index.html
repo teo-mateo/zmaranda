@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .tick line{
+            opacity: 1;
+            stroke-dasharray: 2;
+        }
+        path.domain{
+            fill: none;
+            stroke: gray;
+        }
+        .container{
+            display: flex;
+            flex-direction:row;
+        }
+        .viz{
+            border:10px lightgray solid;
+            margin:5px;
+        }
+        .leftCtrl{
+            border:10px lightgray solid;
+            width: 100px;
+            margin:5px;
+        }
+        .btn{
+            margin:5px;
+            width: 110px;
+        }
+        .btn-active{
+            background-color: #ff9999;
+        }
+        .setosa   {
+            fill: blue;
+        }
+        .versicolor {
+            fill: red;
+        }
+        .virginica {
+            fill: green;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Axis updates</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+    <script src="../util/lodash.js"></script>
+    <script src="../util/util.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="leftCtrl" style="width: 120px">
+            <!--<button onclick="control()" class="btn">CONTROL</button>-->
+        </div>
+        <div id="vizcontainer">
+            <svg id="theSVG" class="viz" style="width:450px;height:450px; ">
+                <g transform="translate(40, 40)" class="graph">
+                    <g class="axisX" transform="translate(0,300)">
+                        <text transform="translate(320, 10)" class="xLabel">X LABEL</text>
+                    </g>
+                    <g class="axisY">
+                        <text transform="translate(-20, -10)" class="yLabel">Y LABEL</text>
+                    </g>
+                </g>
+                <text transform="translate(225, 400)" text-anchor="middle">The iris flower: relationship between Petal and Sepal dimensions.</text>
+            </svg>
+        </div>
+        <div style="width: 400px">
+            <h2>Explanation</h2>
+            <p>This interactive visualization shows the relationship between petal and sepal dimensions in iris flowers.</p>
+            <button class="btn species" data-species="setosa"><svg width="11" height="9"><circle class="setosa" cx="5" cy="5" r="4"></circle> </svg>Iris Setosa</button>
+            <button class="btn species" data-species="versicolor"><svg width="11" height="9"><circle class="versicolor" cx="5" cy="5" r="4"></circle> </svg>Iris Versicolor</button>
+            <button class="btn species" data-species="virginica"><svg width="11" height="9"><circle class="virginica" cx="5" cy="5" r="4"></circle> </svg>Iris Virginica</button>
+            <button class="btn species" data-species="">
+                <svg width="33" height="9">
+                    <circle class="setosa" cx="5" cy="5" r="4"></circle>
+                    <circle class="versicolor" cx="15" cy="5" r="4"></circle>
+                    <circle class="virginica" cx="25" cy="5" r="4"></circle>
+                </svg>All</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="axisupd.js">
+</script>
+
