@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .tick line{
+            opacity: 0.2;
+            stroke-dasharray: 2;
+        }
+        path.domain{
+            fill: none;
+            stroke: gray;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Histogram of age distribution of Schizophrenia onset</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+</head>
+<body>
+<div id="vizcontainer" style="padding: 10px;">
+    <svg id="theSVG" style="width:630px;height:500px;border:10px lightgray solid; "></svg>
+</div>
+</body>
+</html>
+
+<script>
+var HEIGHT = d3.select('svg').node().clientHeight-40;
+var WIDTH = d3.select('svg').node().clientWidth-40;
+
+    function drawHistogram(data){
+
+        var xScale = d3.scale.linear()
+                .domain([0, 7]).range([0, WIDTH]);
+        var bandSize = 0.8;
+
+        var xAxis = d3.svg.axis().scale(xScale)
+                .ticks(6)
+                .tickFormat(function(d) {
+                    if (d == 7) return "";
+                    return (d*10) + " - " + (d+1)*10;
+                })
+                .orient("bottom");
+        d3.select("svg").append("g")
+                .attr("transform", "translate(20, " + (HEIGHT-50) + ")")
+                .call(xAxis);
+        d3.selectAll("text")
+                .attr("transform", "translate(" + xScale(bandSize/2+.1) + ", 0)");
+
+        var yScale = d3.scale.linear()
+                .domain([0, d3.max(data)]).range([HEIGHT, 0]);
+
+        var histoChart = d3.layout.histogram();
+        histoChart.bins([0, 10, 20, 30, 40, 50, 60, 70]);
+        var histoData = histoChart(data);
+
+
+        d3.select("svg").selectAll("g.bar")
+                .data(histoData)
+                .enter()
+                .append("g")
+                .attr("class", "bar")
+                .attr({
+                    "transform": function(d,i){
+                        var xDelta = xScale(i + 0.1);
+                        var yDelta = yScale(d.y)-60;
+                        return "translate(" + xDelta + ", " + yDelta + ")";
+                    },
+                    "bar-width": function() { return xScale(bandSize); },
+                    "bar-height": function(d) { return HEIGHT-yScale(d.y); },
+                    "bar-data": function(d) { return d.y;}
+                })
+                .each(function(d, i){
+                    console.log("appending g.bar " + d + " " + i);
+                    var width = d3.select(this).attr("bar-width");
+                    var height = d3.select(this).attr("bar-height");
+                    var data = d3.select(this).attr("bar-data");
+                    d3.select(this)
+                    .append("rect")
+                    .attr({
+                        x: 0,
+                        y: 0, 
+                        width: width, 
+                        height: height,
+                        fill: "cyan",
+                        stroke: "red",
+                        "stroke-width": "1px",
+                        "transform": "translate(20,0)"});
+
+                    d3.select(this)
+                    .insert("text")
+                    .attr({
+                        x: xScale(bandSize)/2 + 20,
+                        y: -10
+                    })
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", "20")
+                    .attr("fill", "red")
+                    .attr("text-anchor", "middle")
+                    .text(data);
+                });
+
+        d3.select("svg")
+        .append("text")
+        .attr({
+            x: WIDTH/2,
+            y: HEIGHT+10
+        })
+        .style("text-anchor", "middle")
+        .html("Schizophrenia onset age distribution; 99 samples; women.");
+
+    }
+
+    d3.csv("schizophrenia.csv", function(data){
+        drawHistogram(
+                data
+                .filter(function(d) {
+                    return d.gender === 'female';
+                })
+                .map(function(d) { return +d.age; })
+        );
+    });
+</script>
