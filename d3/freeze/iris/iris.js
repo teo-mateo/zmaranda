@@ -105,7 +105,7 @@ function loadData(){
     //y axis
     var maxY = d3.max(Data, d => d[varY]);
     var scaleY = d3.scale.linear().domain([0, maxY]).range([300, 0]);
-    var axisY = d3.svg.axis().scale(scaleY).orient("left").ticks(5);
+    var axisY = d3.svg.axis().scale(scaleY).orient("left").ticks(5); 
     d3.select('g.axisY').call(axisY);
 
     var currentData = Data

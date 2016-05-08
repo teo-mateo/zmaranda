@@ -24,7 +24,7 @@
   /** Used to stand-in for `undefined` hash values. */
   var HASH_UNDEFINED = '__lodash_hash_undefined__';
 
-  /** Used as the internal argument placeholder. */
+  /** Used as the internal argument placeholder. */  
   var PLACEHOLDER = '__lodash_placeholder__';
 
   /** Used to compose bitmasks for wrapper metadata. */
