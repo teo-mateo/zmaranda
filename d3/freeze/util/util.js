@@ -1,6 +1,8 @@
 /**
  * Created by Heapzilla on 5/5/2016.
  */
+// jshint ignore: start
+
 Array.maxByReduce = function(data){
     if (data.constructor === Array){
         return data.reduce(function(x,y){
@@ -11,6 +13,8 @@ Array.maxByReduce = function(data){
     }
 };
 
-function hasClass( target, className ) {
-    return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className); 
-}
+var _util = {
+    hasClass: function( target, className ) {
+        return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
+    }
+};

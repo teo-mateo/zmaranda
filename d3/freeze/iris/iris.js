@@ -1,34 +1,32 @@
 /**
  * Created by Heapzilla on 5/8/2016.
  */
-var CsvData = undefined;
-var Data = {};
+
+var CsvData;
 var Labels = {
     PL: "Petal Length",
     PW: "Petal Width",
     SL: "Sepal Length",
     SW: "Sepal Width"
 };
-
 var Filter = {
     species: "",
     varX: "PL",
     varY: "PW"
-}
+};
 
 function filterBySpecies(){
+    "use strict";
 
-    var dataCopy = undefined;
-
-    if(Filter.species.length != 0)
+    var dataCopy;
+    if(Filter.species.length !== 0)
     {
-        dataCopy = _
-            .filter(CsvData, d=>d['Species'] === Filter.species);
+        dataCopy = _.filter(CsvData, d => d["Species"] === Filter.species);
     } else {
-            dataCopy = CsvData;
-    };
+        dataCopy = CsvData;
+    }
 
-    Data = dataCopy
+    return dataCopy
         .map(function(d) {
             return {
                 PL: +d["Petal.Length"],
@@ -38,16 +36,20 @@ function filterBySpecies(){
                 species: d["Species"]
             };
         });
-};
+}
+
 
 function createButtons(){
-    if (d3.select("button.btn").size() >1)
+    "use strict";
+
+    if (d3.select("button.btn").size() > 1) {
         return;
+    }
     //create buttons
     var btnGenerator = ["PL", "PW", "SL", "SW"];
     btnGenerator.forEach(p1 =>{
         btnGenerator.forEach(p2 =>{
-            if (p1 != p2){
+            if (p1 !== p2){
                 d3.select(".leftCtrl")
                     .append("button")
                     .attr({
@@ -57,15 +59,15 @@ function createButtons(){
                     })
                     .html(`${p1} ${p2}`);
             }
-        })
+        });
     });
 
     //button click events
     d3.selectAll('.btn').on('click', function(){
 
-        if(hasClass(this, "variables")){
+        if(_util.hasClass(this, "variables")){
             d3.selectAll('.btn.variables').classed('btn-active', false);
-        } else if (hasClass(this, "species")){
+        } else if (_util.hasClass(this, "species")){
             d3.selectAll('.btn.species').classed('btn-active', false);
         }
         d3.select(this).classed('btn-active', true);
@@ -87,29 +89,30 @@ function createButtons(){
 }
 
 function loadData(){
+    "use strict";
     var varX = Filter.varX;
     var varY = Filter.varY;
-
-    var currentData = filterBySpecies();
-
+    
     //set labels
     d3.select('.xLabel').html(Labels[varX]);
     d3.select('.yLabel').html(Labels[varY]);
 
+    var data = filterBySpecies();
+
     //x axis
-    var maxX = d3.max(Data, d => d[varX]);
+    var maxX = d3.max(data, d => d[varX]);
     var scaleX = d3.scale.linear().domain([0, maxX]).range([0,300]);
     var axisX = d3.svg.axis().scale(scaleX).orient("bottom").ticks(5);
     d3.select('g.axisX').call(axisX);
 
     //y axis
-    var maxY = d3.max(Data, d => d[varY]);
+    var maxY = d3.max(data, d => d[varY]);
     var scaleY = d3.scale.linear().domain([0, maxY]).range([300, 0]);
     var axisY = d3.svg.axis().scale(scaleY).orient("left").ticks(5); 
     d3.select('g.axisY').call(axisY);
 
-    var currentData = Data
-        .map(function(d) {
+
+    var currentData = data.map(function(d) {
            return {
                X: d[varX],
                Y: d[varY],
@@ -131,35 +134,36 @@ function loadData(){
         .attr({
             class: "iris",
             r: 5,
-            cx: function(d, i) {
+            cx: function(d) {
                 return scaleX(d.X);
             },
-            cy: function(d, i) {
-                return scaleY(d.Y)
+            cy: function(d) {
+                return scaleY(d.Y);
             },
             fill: function(d) {
                 return speciesToColor(d.species);
             },
-            "opacity": .2
+            "opacity": 0.2
         });
 
     //update existing
     selection
         .transition()
         .attr({
-            cx: function(d, i) {
+            cx: function(d) {
                 return scaleX(d.X);
             },
-            cy: function(d, i) {
-                return scaleY(d.Y)
+            cy: function(d) {
+                return scaleY(d.Y);
             },
             fill: function(d){
                 return speciesToColor(d.species);
-            },
+            }
             });
 }
 
 function speciesToColor(species){
+    "use strict";
     switch (species){
         case "setosa":
             return "blue";
@@ -167,13 +171,16 @@ function speciesToColor(species){
             return "red";
         case "virginica":
             return "green";
-    };
+    }
 }
 
+
+
 d3.csv('iris.csv', function(data) {
+    "use strict";
     CsvData = data;
     createButtons();
     //simulate click on the first button
-    d3.select('.btn').node().click();
+    d3.select('.btn').node().click(); // jshint ignore:line
 });
 
