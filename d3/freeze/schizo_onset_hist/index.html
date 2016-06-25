@@ -28,6 +28,7 @@ var WIDTH = d3.select('svg').node().clientWidth-40;
 
     function drawHistogram(data){
 
+        // x scale and axis
         var xScale = d3.scale.linear()
                 .domain([0, 7]).range([0, WIDTH]);
         var bandSize = 0.8;
@@ -45,14 +46,20 @@ var WIDTH = d3.select('svg').node().clientWidth-40;
         d3.selectAll("text")
                 .attr("transform", "translate(" + xScale(bandSize/2+.1) + ", 0)");
 
+        // y scale
         var yScale = d3.scale.linear()
                 .domain([0, d3.max(data)]).range([HEIGHT, 0]);
 
+        // using the histogram layout
         var histoChart = d3.layout.histogram();
+        // a bin for every age group we want to represent.
         histoChart.bins([0, 10, 20, 30, 40, 50, 60, 70]);
+
+        //format the data.
+        //the result is an array of arrays with the input data split by histoChart's bins.
         var histoData = histoChart(data);
 
-
+        // bind g.bar to histoData (array of arrays)
         d3.select("svg").selectAll("g.bar")
                 .data(histoData)
                 .enter()
@@ -110,6 +117,10 @@ var WIDTH = d3.select('svg').node().clientWidth-40;
     }
 
     d3.csv("schizophrenia.csv", function(data){
+
+        // the data for this histogram is uni-dimensional.
+        // the only thing we need from the csv is an array with all the ages.
+        // so we apply filter and map
         drawHistogram(
                 data
                 .filter(function(d) {

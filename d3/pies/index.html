@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .viz{
+            border:10px lightgray solid;
+            margin:5px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+    <meta charset="UTF-8">
+    <title>Pies in the sky</title>
+</head>
+<body>
+    <svg id="theSVG" class="viz" style="width:450px;height:450px; ">
+
+    </svg>
+
+    <button id="seeTweets" onclick="seeUpdated('numTweets')">tweets</button>
+    <button id="seeFavorites" onclick="seeUpdated('numFavorites')">favorites</button>
+    <button id="seeRetweets" onclick="seeUpdated('numRetweets')">retweets</button>
+</body>
+</html>
+
+<script>
+
+    var PIE = {
+        pieChart: null,
+        nestedTweets: null,
+        arc: null
+    };
+
+    function seePie(what){
+        d3.json('tweets.json', function (err, data) {
+            PIE.nestedTweets = d3.nest()
+                    .key(function(el) { return el.user; })
+                    .entries(data.tweets);
+
+            PIE.nestedTweets.forEach(function(el) {
+                el.numTweets = el.values.length;
+                el.numFavorites = el.values
+                        .reduce(function(a, b) {
+                            return a + b.favorites.length;
+                        }, 0);
+                el.numRetweets = el.values
+                        .reduce(function(a, b) {
+                            return a + b.retweets.length;
+                        }, 0);
+            });
+
+            PIE.pieChart = d3.layout.pie();
+            PIE.pieChart.value(function(d) { return d.numTweets; });
+
+
+            PIE.arc = d3.svg.arc();
+            PIE.arc.innerRadius(20);
+            PIE.arc.outerRadius(100);
+
+            var binding = d3.select("svg")
+                    .append("g")
+                    .attr("transform", "translate(200, 200)")
+                    .selectAll("path")
+                    .data(PIE.pieChart(PIE.nestedTweets));
+            binding
+                    .enter()
+                    .append("path")
+                    .attr("d", PIE.arc)
+                    .style("fill", "blue")
+                    .style("opacity", 0.5)
+                    .style("stroke", "black")
+                    .style("stroke-width", "2px");
+
+        });
+    }
+
+    seePie('numTweets');
+
+    function seeUpdated(what){
+        PIE.pieChart.value(function(d) { return d[what];});
+
+        var binding = d3.selectAll("path").data(PIE.pieChart(PIE.nestedTweets.filter(function(d){
+            return d[what] > 0;
+        })), function(d){
+            return d.data.key;
+        });
+
+        binding.exit().remove();
+
+        binding.transition().duration(1000).attr("d", arcTween);
+
+        function arcTween(a){
+            var i = d3.interpolate(this._current, a);
+            this._current = i(0);
+            return function(t){
+                return PIE.arc(i(t));
+            }
+        }
+    }
+
+</script>
