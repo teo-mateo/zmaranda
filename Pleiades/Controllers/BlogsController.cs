@@ -49,11 +49,7 @@ namespace Pleiades.Controllers
 
 
             //_context.SaveChanges();
-
-            return JsonConvert.SerializeObject(blog, new JsonSerializerSettings()
-            {
-                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-            });
+            return "aa";
 
         }
     }
