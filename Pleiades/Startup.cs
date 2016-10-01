@@ -25,7 +25,14 @@ namespace Pleiades
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-            _cn = Environment.GetEnvironmentVariable("EFDBCN");
+            string dbuser = Environment.GetEnvironmentVariable("DBUSER");
+            string dbpwd = Environment.GetEnvironmentVariable("DBPWD");
+            string dbhost = Environment.GetEnvironmentVariable("DBHOST");
+            string dbport = Environment.GetEnvironmentVariable("DBPORT");
+            string db = Environment.GetEnvironmentVariable("DB");
+
+            //User ID=efuser;Password=efpwpwpwpicu;Host=188.166.134.138;Port=15432;Database=efdb;
+            _cn = $"User ID={dbuser};Password={dbpwd};Host={dbhost};Port={dbport};Database={db};";
         }
 
         public IConfigurationRoot Configuration { get; }
