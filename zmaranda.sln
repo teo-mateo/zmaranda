@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zmaranda", "zmaranda\zmaranda.csproj", "{A74DFDEB-EF2F-458F-AE33-C166D6179619}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.xproj", "{D47B09E7-E2CA-4299-9D09-A4CFCCFA894B}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kurtur", "Kurtur\Kurtur.xproj", "{EE921C7D-BC87-4536-A199-5B9560931328}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pleiades", "Pleiades\Pleiades.xproj", "{DC763013-5401-44BA-AAD0-84E5FA33E588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{EE921C7D-BC87-4536-A199-5B9560931328}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE921C7D-BC87-4536-A199-5B9560931328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE921C7D-BC87-4536-A199-5B9560931328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC763013-5401-44BA-AAD0-84E5FA33E588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC763013-5401-44BA-AAD0-84E5FA33E588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC763013-5401-44BA-AAD0-84E5FA33E588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC763013-5401-44BA-AAD0-84E5FA33E588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
